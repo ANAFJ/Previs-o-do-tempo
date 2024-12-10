@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0; /* por conta dos navegadores colocarem automaticamente um valor de margem, zeramos tudo para que fiquem no padrão */
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    height: 100vh; /* Ambos usados para ocupar a tela toda*/
+    width: 100vw;
+    display: flex;/* ao colocar o display podemos usar as propriedades abaixo para centralizar*/
+    justify-content: center ; /* centraliza na horizontal */
+    align-items: center;/* centraliza na vertical */
+    background-image: url("https://fastly.picsum.photos/id/805/1920/1089.jpg?hmac=pg5YwpyegKM_ogmphfKT-p4-ZfshsWgRqbIi50TofjY");
+}
+
+.caixa_maior{
+    background-color: black;
+    opacity: 0.8; /* para dar trasnparencia a caixa*/
+    border-radius: 25px;
+    padding:20px ; /**/
+    width: 95%;
+    max-width: 450px;
+}
+.input_cidade{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color:#ffffff;
+    width: 350px; /* calc(100% - 100)vai ocupar todo espaço menos 100, para evitar que os botões mudem por conta do tamanho de telas diferentes*/
+}
+
+.botao_buscar{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+}
+
+.botao_lupa{
+    width: 20px;
+}
+
+.caixa_media{
+    margin-top: 30px;
+}
+.cidade{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300; /*deixa a letra mais fina*/
+}
+.tempo{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.caixa_menor{
+    display: flex;
+    align-items: center;
+
+}
+.texto_previsao{
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize; /*troca a primeira letra para maiusculo*/
+}
+.umidade{
+    color: #ffffff;
+    margin-top: 20px;
+}
